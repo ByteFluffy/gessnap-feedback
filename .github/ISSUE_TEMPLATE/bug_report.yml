@@ -1,0 +1,79 @@
+name: "🐛 Bug 反馈 / Bug Report"
+description: "反馈窗口吸附、手势识别、卡顿、多显示器、空桌面清理或设置界面问题"
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢提交 Bug 反馈！请尽量补充清晰的环境信息和复现步骤，以便快速定位。
+        Thanks for reporting! Please include environment info and reproduction steps below.
+  - type: textarea
+    id: summary
+    attributes:
+      label: 问题描述与复现步骤 / Description & Steps to Reproduce
+      description: 请描述具体出现了什么问题，以及如何稳定复现。
+      placeholder: |
+        1. 打开 Safari 和 Finder...
+        2. 按住触发键拖动窗口 / 右键画出 ← 手势...
+        3. 观察到...
+    validations:
+      required: true
+  - type: textarea
+    id: expected_actual
+    attributes:
+      label: 预期行为与实际结果 / Expected vs Actual Behavior
+      placeholder: |
+        预期：...
+        实际：...
+    validations:
+      required: true
+  - type: input
+    id: gessnap_version
+    attributes:
+      label: GesSnap 版本与 Build 号 / GesSnap Version & Build
+      description: 例如 `0.1.0 (50)`
+      placeholder: "0.1.0 (50)"
+    validations:
+      required: true
+  - type: input
+    id: macos_version
+    attributes:
+      label: macOS 系统版本 / macOS Version
+      placeholder: "macOS 15.3 / Sequoia"
+    validations:
+      required: true
+  - type: dropdown
+    id: chip
+    attributes:
+      label: Mac 芯片架构 / Mac Chip
+      options:
+        - "Apple Silicon (M1 / M2 / M3 / M4)"
+        - "Intel"
+    validations:
+      required: true
+  - type: dropdown
+    id: accessibility
+    attributes:
+      label: 辅助功能权限状态 / Accessibility Permission
+      options:
+        - "已授权 / Granted"
+        - "未授权或提示重新授权 / Not granted or re-prompted"
+        - "不确定 / Not sure"
+    validations:
+      required: true
+  - type: dropdown
+    id: displays
+    attributes:
+      label: 显示器环境 / Display Setup
+      options:
+        - "单屏（MacBook 内建刘海屏 / 常规屏）"
+        - "多显示器（笔记本 + 外接屏）"
+        - "多台外接显示器"
+    validations:
+      required: false
+  - type: textarea
+    id: attachments
+    attributes:
+      label: 截图、录屏或日志补充 / Screenshots, Screen Recording, or Extra Notes
+      description: 可直接将截图或短录屏拖入此输入框，也请说明目标应用名称（如 Chrome、微信、VS Code 等）。
