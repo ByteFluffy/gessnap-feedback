@@ -1,52 +1,51 @@
-name: "🐛 Bug 反馈 / Bug Report"
-description: "反馈窗口吸附、手势识别、卡顿、多显示器、空桌面清理或设置界面问题"
+name: "🐛 Bug Report"
+description: "Report issues with window snapping, gesture recognition, stutter, multi-display, empty desktop cleanup, or Settings UI"
 title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        感谢提交 Bug 反馈！请尽量补充清晰的环境信息和复现步骤，以便快速定位。
-        Thanks for reporting! Please include environment info and reproduction steps below.
+        Thanks for reporting a bug! Please include your environment details and clear reproduction steps below.
   - type: textarea
     id: summary
     attributes:
-      label: 问题描述与复现步骤 / Description & Steps to Reproduce
-      description: 请描述具体出现了什么问题，以及如何稳定复现。
+      label: Description & Steps to Reproduce
+      description: Describe what went wrong and how to reproduce it reliably.
       placeholder: |
-        1. 打开 Safari 和 Finder...
-        2. 按住触发键拖动窗口 / 右键画出 ← 手势...
-        3. 观察到...
+        1. Open Safari and Finder...
+        2. Hold the trigger key and drag a window / draw a ← gesture...
+        3. Observe...
     validations:
       required: true
   - type: textarea
     id: expected_actual
     attributes:
-      label: 预期行为与实际结果 / Expected vs Actual Behavior
+      label: Expected vs Actual Behavior
       placeholder: |
-        预期：...
-        实际：...
+        Expected: ...
+        Actual: ...
     validations:
       required: true
   - type: input
     id: gessnap_version
     attributes:
-      label: GesSnap 版本与 Build 号 / GesSnap Version & Build
-      description: 例如 `0.1.0 (50)`
+      label: GesSnap Version & Build
+      description: For example `0.1.0 (50)`
       placeholder: "0.1.0 (50)"
     validations:
       required: true
   - type: input
     id: macos_version
     attributes:
-      label: macOS 系统版本 / macOS Version
-      placeholder: "macOS 15.3 / Sequoia"
+      label: macOS Version
+      placeholder: "macOS 15.3"
     validations:
       required: true
   - type: dropdown
     id: chip
     attributes:
-      label: Mac 芯片架构 / Mac Chip
+      label: Mac Chip Architecture
       options:
         - "Apple Silicon (M1 / M2 / M3 / M4)"
         - "Intel"
@@ -55,25 +54,25 @@ body:
   - type: dropdown
     id: accessibility
     attributes:
-      label: 辅助功能权限状态 / Accessibility Permission
+      label: Accessibility Permission Status
       options:
-        - "已授权 / Granted"
-        - "未授权或提示重新授权 / Not granted or re-prompted"
-        - "不确定 / Not sure"
+        - "Granted"
+        - "Not granted or re-prompted"
+        - "Not sure"
     validations:
       required: true
   - type: dropdown
     id: displays
     attributes:
-      label: 显示器环境 / Display Setup
+      label: Display Setup
       options:
-        - "单屏（MacBook 内建刘海屏 / 常规屏）"
-        - "多显示器（笔记本 + 外接屏）"
-        - "多台外接显示器"
+        - "Single display (MacBook built-in / notch / standard)"
+        - "Multi-display (laptop + external monitor)"
+        - "Multiple external monitors"
     validations:
       required: false
   - type: textarea
     id: attachments
     attributes:
-      label: 截图、录屏或日志补充 / Screenshots, Screen Recording, or Extra Notes
-      description: 可直接将截图或短录屏拖入此输入框，也请说明目标应用名称（如 Chrome、微信、VS Code 等）。
+      label: Screenshots, Screen Recording, or Notes
+      description: You can drag and drop screenshots or short clips directly here. Mention target app names (e.g., Chrome, VS Code, Finder) if relevant.

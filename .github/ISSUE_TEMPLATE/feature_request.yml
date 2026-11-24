@@ -1,42 +1,42 @@
-name: "💡 功能建议 / Feature Request"
-description: "提出新的工作流需求、分屏交互改进、手势或自动化规则建议"
+name: "💡 Feature Request"
+description: "Suggest a new workflow, snapping interaction, gesture, or automation rule"
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
   - type: textarea
     id: problem
     attributes:
-      label: 你想解决什么使用场景或痛点？ / Use Case & Problem
-      description: 描述你平时如何使用 Mac 窗口，现在哪一步不够顺手？
+      label: Use Case & Problem
+      description: Describe your Mac window workflow and which step feels slow or awkward today.
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: 期望的实现方式 / Proposed Solution
-      description: 描述你理想中的交互方式、快捷键或配置项。
+      label: Proposed Solution
+      description: Describe the ideal behavior, trigger, or configuration option.
     validations:
       required: true
   - type: dropdown
     id: module
     attributes:
-      label: 相关功能模块 / Related Area
+      label: Related Area
       options:
-        - "鼠标手势 / Mouse Gestures"
-        - "触控板与妙控鼠标手势 / Trackpad & Magic Mouse"
-        - "拖动吸附与布局编辑器 / Drag Snapping & Layout Editor"
-        - "快捷键 / Hotkeys"
-        - "触发角 / Hot Corners"
-        - "多显示器与工作区恢复 / Multi-display & Workspace Restore"
-        - "空桌面清理 / Empty Desktop Cleanup"
-        - "滚动增强与 AppleScript 脚本库 / Scroll & Script Library"
-        - "其他 / Other"
+        - "Mouse Gestures"
+        - "Trackpad & Magic Mouse"
+        - "Drag Snapping & Layout Editor"
+        - "Hotkeys"
+        - "Hot Corners"
+        - "Multi-display & Workspace Restore"
+        - "Empty Desktop Cleanup"
+        - "Scroll & Script Library"
+        - "Other"
     validations:
       required: true
   - type: dropdown
     id: beta
     attributes:
-      label: 如果上线测试版本，是否愿意提前体验并反馈？ / Willing to test preview builds?
+      label: Willing to test preview builds?
       options:
-        - "愿意 / Yes"
-        - "仅关注正式版 / Release only"
+        - "Yes"
+        - "Release only"

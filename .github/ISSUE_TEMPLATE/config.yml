@@ -2,10 +2,7 @@ blank_issues_enabled: false
 contact_links:
   - name: "🌐 GesSnap Official Website (gessnap.app)"
     url: "https://gessnap.app"
-    about: "查看功能介绍、系统要求与下载说明 / Product overview and downloads"
-  - name: "✨ Free & Pro 版本说明与价格（¥39.9 / $8.9）"
-    url: "https://github.com/ByteFluffy/gessnap-feedback/blob/main/docs/pro-edition-zh.md"
-    about: "查看免费版与专业版功能划分、设备上限与退款政策"
+    about: "Product overview, system requirements, and downloads"
   - name: "📧 Email Support (bw6498228@gmail.com)"
     url: "mailto:bw6498228@gmail.com"
-    about: "涉及隐私、订单或不便公开的问题可通过邮件联系"
+    about: "Private support requests or billing inquiries"
