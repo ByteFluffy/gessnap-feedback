@@ -8,7 +8,7 @@ Welcome to the official public feedback repository for **GesSnap**, a native mac
 
 ## Quick Links
 
-- 🌐 **Official Website**: [gessnap.app](https://gessnap.app)
+- 🌐 **Official Website**: [gessnap.com](https://gessnap.com)
 - 🐛 **Report a Bug**: [New Bug Report](https://github.com/ByteFluffy/gessnap-feedback/issues/new?template=bug_report.yml)
 - 💡 **Request a Feature**: [New Feature Request](https://github.com/ByteFluffy/gessnap-feedback/issues/new?template=feature_request.yml)
 - 📧 **Email Support**: `bw6498228@gmail.com`
