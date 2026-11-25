@@ -1,8 +1,11 @@
 blank_issues_enabled: false
 contact_links:
+  - name: "📖 Setup & Permissions Guide"
+    url: "https://gessnap.com/en/guide/"
+    about: "First-launch Gatekeeper approval, Accessibility setup, and common fixes"
   - name: "🌐 GesSnap Official Website (gessnap.com)"
     url: "https://gessnap.com"
     about: "Product overview, system requirements, and downloads"
-  - name: "📧 Email Support (bw6498228@gmail.com)"
-    url: "mailto:bw6498228@gmail.com"
-    about: "Private support requests or billing inquiries"
+  - name: "📧 Email Support (support@gessnap.com)"
+    url: "mailto:support@gessnap.com"
+    about: "Private support requests, privacy inquiries, or security reports"

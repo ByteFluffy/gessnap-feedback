@@ -1,0 +1,23 @@
+name: "❓ Question / Usage Help"
+description: "Ask about setup, permissions, app compatibility, or workflow configuration"
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before asking, please check the [Setup & Permissions Guide](https://gessnap.com/en/guide/) for first-launch and macOS Accessibility steps.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: Describe what you are trying to set up or understand.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: GesSnap & macOS Version
+      placeholder: "GesSnap 0.1.0 (52), macOS 15.4"
+    validations:
+      required: false

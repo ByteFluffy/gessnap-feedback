@@ -31,15 +31,15 @@ body:
     id: gessnap_version
     attributes:
       label: GesSnap Version & Build
-      description: For example `0.1.0 (50)`
-      placeholder: "0.1.0 (50)"
+      description: For example `0.1.0 (52)`
+      placeholder: "0.1.0 (52)"
     validations:
       required: true
   - type: input
     id: macos_version
     attributes:
       label: macOS Version
-      placeholder: "macOS 15.3"
+      placeholder: "macOS 15.4"
     validations:
       required: true
   - type: dropdown
@@ -47,7 +47,7 @@ body:
     attributes:
       label: Mac Chip Architecture
       options:
-        - "Apple Silicon (M1 / M2 / M3 / M4)"
+        - "Apple Silicon (M-series)"
         - "Intel"
     validations:
       required: true
@@ -71,8 +71,37 @@ body:
         - "Multiple external monitors"
     validations:
       required: false
+  - type: dropdown
+    id: area
+    attributes:
+      label: Related Area
+      options:
+        - "Mouse Gestures"
+        - "Trackpad & Magic Mouse"
+        - "Drag Snapping & Layout Editor"
+        - "Hotkeys / Hot Corners"
+        - "Multi-display"
+        - "Empty Desktop Cleanup"
+        - "Installation & Permissions"
+        - "Settings UI / Localization"
+        - "Performance / Stutter"
+        - "Other"
+    validations:
+      required: false
+  - type: dropdown
+    id: input_device
+    attributes:
+      label: Input Device
+      options:
+        - "Standard Mouse"
+        - "Built-in Trackpad"
+        - "Magic Trackpad"
+        - "Magic Mouse"
+        - "Keyboard Only / Other"
+    validations:
+      required: false
   - type: textarea
     id: attachments
     attributes:
       label: Screenshots, Screen Recording, or Notes
-      description: You can drag and drop screenshots or short clips directly here. Mention target app names (e.g., Chrome, VS Code, Finder) if relevant.
+      description: You can drag and drop screenshots or short clips directly here. Mention target app names (e.g., Chrome, VS Code, Finder) if relevant. Issues are public — please blur or avoid sharing sensitive personal information.
